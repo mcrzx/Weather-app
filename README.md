@@ -1,2 +1,2 @@
 # Weather-app
-![weather-app-logo](https://user-images.githubusercontent.com/117686212/229588701-deb0769e-1fac-495f-8e80-8f2c8965a320.gif)
+![weather_icon](https://user-images.githubusercontent.com/117686212/229589261-bcf88f74-eda4-4732-aa79-a66b5fd92ca8.gif)
