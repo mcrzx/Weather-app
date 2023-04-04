@@ -9,11 +9,13 @@ import{
     UilSunset,
 } from "@iconscout/react-unicons";
 
-function DetailsAndTemperature() {
+function DetailsAndTemperature({weather: {
+    details, icon, temp_min, temp_max, sunrise, sunset, speed, humidity, feels_like, timezone
+}}) {
   return (
     <div>
         <div className=' flex items-center justify-center py-6 text-xl text-cyan-300'>
-            <p>Cloudy</p>
+            <p>{details}</p>
         </div>
 
         <div className='flex flex-row items-center justify-between  text-white py-3'>
