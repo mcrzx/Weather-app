@@ -31,12 +31,12 @@ function DetailsAndTemperature({weather: {
                 <div className='flex font-light text-sm item-center justify-center'>
                 <UilTemperature size={18} className="mr-1"/>
                 Real fell:
-                <span className='font-medium ml-1'>32°</span>
+                <span className='font-medium ml-1'>{`${feels_like.toFixed()}°`}</span>
                 </div>
                 <div className='flex font-light text-sm item-center justify-center'>
                 <UilTear size={18} className="mr-1"/>
                 Humidity:
-                <span className='font-medium ml-1'>65%</span>
+                <span className='font-medium ml-1'>{`${humidity.toFixed()}%`}</span>
                 </div>
                 <div className='flex font-light text-sm item-center justify-center'>
                 <UilWind size={18} className="mr-1"/>
