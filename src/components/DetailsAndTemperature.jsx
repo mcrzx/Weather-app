@@ -11,7 +11,7 @@ import{
 import { iconUrlFromCode } from '../services/weatherService';
 
 function DetailsAndTemperature({weather: {
-    details, icon, temp_min, temp_max, sunrise, sunset, speed, humidity, feels_like, timezone
+    details, icon, temp_min, temp_max, sunrise, sunset, speed, humidity, feels_like, timezone, temp
 }}) {
   return (
     <div>
@@ -24,7 +24,7 @@ function DetailsAndTemperature({weather: {
             alt=''
             className='w-20'>
             </img>
-            <p className='text-5xl'>34°</p>
+            <p className='text-5xl'>{`${temp}°`}</p>
             <div className='flex flex-col space-y-2'>
 
 
