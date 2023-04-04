@@ -30,11 +30,13 @@ fetchWeather();
 }, [query, units])
 
 const formatBackground = () => {
-  if (!weather) return "from-cyan-700 to-blue-700";
+  if (!weather) return "from-cyan-700 to-blue-700"; //default background till the data is fetched
   const threshold = units === "metric" ? 20 : 60;
-  if (weather.temp <= threshold) return "from-cyan-700 to-blue-700";
+  if (weather.temp <= threshold)  return "from-cyan-700 to-blue-700";
 
   return "from-yellow-700 to-orange-700";
+  
+
 };
 
   return (
