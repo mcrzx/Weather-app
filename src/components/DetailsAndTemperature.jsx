@@ -41,7 +41,7 @@ function DetailsAndTemperature({weather: {
                 <div className='flex font-light text-sm item-center justify-center'>
                 <UilWind size={18} className="mr-1"/>
                 Wind:
-                <span className='font-medium ml-1'>11km/h</span>
+                <span className='font-medium ml-1'>{`${speed.toFixed()}km/h`}</span>
                 </div>
             </div>
         </div>
