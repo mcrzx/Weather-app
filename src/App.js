@@ -5,8 +5,14 @@ import Input from './components/Input';
 import LocationAndTime from './components/LocationAndTime';
 import DetailsAndTemperature from './components/DetailsAndTemperature';
 import Forecast from './components/Forecast';
+import getWeatherData from './services/weatherService';
 
 function App() {
+  const fetchWeather = async () => {
+     const data = await getWeatherData()
+     console.log(data);
+  }
+fetchWeather();
   return (
     <div className="mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
      <TopPageButtons/>
