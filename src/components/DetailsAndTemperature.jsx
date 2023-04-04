@@ -8,6 +8,7 @@ import{
     UilSun,
     UilSunset,
 } from "@iconscout/react-unicons";
+import { iconUrlFromCode } from '../services/weatherService';
 
 function DetailsAndTemperature({weather: {
     details, icon, temp_min, temp_max, sunrise, sunset, speed, humidity, feels_like, timezone
@@ -19,7 +20,7 @@ function DetailsAndTemperature({weather: {
         </div>
 
         <div className='flex flex-row items-center justify-between  text-white py-3'>
-            <img src='http://openweathermap.org/img/wn/01d@2x.png'
+            <img src={iconUrlFromCode(icon)}
             alt=''
             className='w-20'>
             </img>
