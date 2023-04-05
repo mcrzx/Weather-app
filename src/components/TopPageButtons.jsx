@@ -1,26 +1,18 @@
 import React from 'react'
 
 function TopPageButtons() {
-    const cities = [
+    const cities  = [
     {
       id:1,
-      title: 'London'
+      title: 'Discover'
     },
     {
       id:2,
-      title: 'Bucharest'
+      title: 'Faverouties'
     },
     {
       id:3,
-      title: 'Tokyo'
-    },
-    {
-      id:4,
-      title: 'Toronto'
-    },
-    {
-      id:5,
-      title: 'Paris'
+      title: 'Source'
     }
   
   
