@@ -1,0 +1,137 @@
+
+/* Design of navbar */
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #353b44a1;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(54, 52, 52, 0.06);
+}
+
+#navbar{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding:  0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #0055ff;
+}
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #3274f7;
+    position: absolute;
+    bottom:  -4px;
+    left: 20px;
+
+}
+#mobile{
+    display: none;
+}
+#mobile i{
+    color: #fff;
+}
+
+@media screen and (max-width: 769px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 120px;
+        right: -300px;
+         width: 300px;
+         height: 100vh;
+         background: #2a3230;
+         box-shadow:  0 40px 60 px rgba(0,0,0,0.1);
+         padding: 40px 0 0 10px;
+         transition: 0.3s ease-in-out;
+
+        }
+
+        #navbar.active {
+            right: 0px;
+         }
+
+        #navbar li{
+            margin-bottom: 25px;
+        }
+        #mobile{
+            display: block;
+        }
+        #mobile i{
+            font-size: 24px;
+            cursor: pointer;
+        }
+}
+
+/* Design of preloader  */
+
+.preloader {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.preloader .texts-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 300px;
+    font-size: 20px;
+    font-weight:450;
+    overflow: hidden;
+    color: #000000;
+}
+
+
+/* backgorund video */
+.main{
+    width: 100%;
+    height: 100vh;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
