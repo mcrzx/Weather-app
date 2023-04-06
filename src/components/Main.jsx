@@ -1,12 +1,11 @@
 import React from 'react'
-import videoBg from '../assets/videoBg.mp4'
+import eu from '../assets/eu.mp4'
 
 const Main = () =>{
   return (
    
     <div className='main'>
-         <div className="overlay"></div>
-        <video src={videoBg} autoPlay loop muted/>
+        <video src={eu} autoPlay loop muted/>
     
     </div>
   )
