@@ -31,14 +31,14 @@ justify-content: center;
 }
 #navbar li a:hover,
 #navbar li a.active{
-    color: #0055ff;
+    color: #368df8;
 }
 #navbar li a:hover::after,
 #navbar li a.active::after{
     content: "";
     width: 30%;
     height: 2px;
-    background-color: #3274f7;
+    background-color: #1c7bf3;
     position: absolute;
     bottom:  -4px;
     left: 20px;
@@ -118,12 +118,36 @@ justify-content: center;
 /* backgorund video */
 .main{
     width: 100%;
-    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 30%;
+
+    overflow: hidden;
 }
 video{
-    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    filter: blur(5px);
+  
+    left: 0;
+    z-index: -1;
     height: 100%;
+    width: 100%;
     object-fit: cover;
+
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
 }
 
 .overlay{
@@ -132,5 +156,6 @@ video{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0,0,0,0.6);
+    
 }
