@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import Preloader from './components/Preloader';
 import Main from './components/Main';
 
+
 function App() {
 const [query, setQuery] = useState({q:'Oradea'})
 const [units, setUnits] = useState('metric')
@@ -40,30 +41,40 @@ const formatBackground = () => {
 };
 
   return (
-    <div className='video'>
-      <Main/>
+    <div className="overlay">
+
+    <div className="main">
+    <Main />
     <div className={`mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}>
      {/* <TopPageButtons setQuery={setQuery}/> */}
-      
+
+ 
      <>    <Preloader/></>
   
      <Navbar />
-     <Input setQuery={setQuery} units={units} setUnits={setUnits}/>
 
+     <Input setQuery={setQuery} units={units} setUnits={setUnits}/>
+    
      {weather && (
       <div> 
         <LocationAndTime weather= {weather}/>
      <DetailsAndTemperature weather = {weather}/>
+     
      <Forecast title='hourly forecast' items={weather.hourly}/>
+ 
      <Forecast title='daily forecast' items={weather.daily}/>
     
       </div>
      )}
 
 <ToastContainer autoClose={5000} theme="colored" newestOnTop={true} />
+
     </div>
+      </div>
     </div>
+       
   );
+ 
 }
 
 export default App;
