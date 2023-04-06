@@ -12,6 +12,9 @@ function Input({setQuery, units, setUnits}) {
     if (city !== '') setQuery({q: city}) 
   }
 
+  const handleFaveClick = () => {
+    toast.info('Added to favourites list')
+  }
   const handleLocationClick = () => {
     toast.info ('Fetching users location.')
     if (navigator.geolocation) {
@@ -38,7 +41,7 @@ function Input({setQuery, units, setUnits}) {
       
         <UilSearch size={25} className='text-white cursor-pointer  transition ease-out hover:scale-125 ' onClick={handleSearchClick}/>
         <UilLocationPoint size={25} className='text-white cursor-pointer transition ease-out hover:scale-125' onClick={handleLocationClick}/>
-        <UilHeart size={25} className='text-white cursor-pointer transition ease-out hover:scale-125'/>
+        <UilHeart size={25} className='text-white cursor-pointer transition ease-out hover:scale-125' onClick={handleFaveClick}/>
         </div>
 
         <div className='flex flex-row w-1/4 items-center justify-center'>
