@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Styles.css"
+import Faves from '../components/Favourites'
+import { Link } from "react-router-dom";
 
 class Navbar extends Component{
     state = {clicked: false};
@@ -8,6 +10,7 @@ class Navbar extends Component{
     }
     render() {
   return (
+ 
     <>
       <nav>
         <a href="index.html">
@@ -37,8 +40,10 @@ class Navbar extends Component{
         </a>
         <div>
             <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
-                <li><a className="active" href="App.js">Discover</a> </li>
-                <li><a href="index.html">Favourites</a></li>    
+                <li> <Link to = '/' className="active">Discover</Link> </li>
+                <li>
+                <Link to = '../components/Favourites'className="active">Favourites</Link>
+              </li>
                 <li><a href="https://github.com/mcrzx/Weather-app">Source</a></li>
                 
             </ul>
