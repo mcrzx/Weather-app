@@ -8,7 +8,7 @@ import Favourites from './components/Favourites';
 ReactDOM.render(
     <Router>
         <Routes>
-            <Route path="/" element={<App />} />
+            <Route path='/' element={<App/>} />
             <Route path="/components/Favourites" element={<Favourites />} />
         </Routes>
     </Router>,
