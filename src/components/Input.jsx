@@ -13,7 +13,7 @@ function Input({setQuery, units, setUnits}) {
   }
 
   const handleFaveClick = () => {
-    toast.info('Added to favourites list')
+    toast.info('Added to favourites')
   }
   const handleLocationClick = () => {
     toast.info ('Fetching users location.')
