@@ -25,7 +25,7 @@ function DetailsAndTemperature({weather: {
             className='w-20'>
             </img>
             <p className='text-5xl'>{`${temp.toFixed()}°`}</p>
-            <div className='flex flex-col space-y-2'>
+            <div className={`flex flex-col space-y-2 ${temp_min && temp_max && sunrise && sunset && speed && humidity && feels_like && timezone ? 'hidden md:flex' : ''}`}>
 
 
                 <div className='flex font-light text-sm item-center justify-center'>
@@ -45,7 +45,7 @@ function DetailsAndTemperature({weather: {
                 </div>
             </div>
         </div>
-        <div className='flex flex-row items-center justify-center space-x-2 text-white text-sm py-3'> 
+        <div className={`flex flex-row items-center justify-center space-x-2 text-white text-sm py-3 ${temp_min && temp_max && sunrise && sunset && speed && humidity && feels_like && timezone ? 'hidden md:flex' : ''}`}> 
         <UilSun/>
         <p className='font-light'>Rise: <span className='font-medium ml-1'>{formatToLocalTime(sunrise, timezone, "hh:mm a")}</span></p>
         <p className='font-light'>|</p>
