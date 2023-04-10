@@ -10,7 +10,10 @@ function Input({setQuery, units, setUnits}) {
     if (units !== selectedUnit) setUnits(selectedUnit);
   } 
   const handleSearchClick = () => {
-    if (city !== '') setQuery({q: city}) 
+    if (city !== '') {
+      setQuery({q: city})
+      toast.success('Successfully fetched weather')
+    }
   }
 
   const handleFaveClick = () => {
