@@ -11,4 +11,4 @@ A Weather App website allows users to stay informed on the current, weather cond
 » React JS
 
 # Screenshots of the Project 📸
-
+![Képernyőfotó 2023-04-11 - 15 45 28](https://user-images.githubusercontent.com/117686212/231237013-9a5f2f42-efd5-414f-b190-15c218262eed.png)
