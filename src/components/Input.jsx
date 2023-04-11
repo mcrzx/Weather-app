@@ -6,10 +6,17 @@ import Autosuggest from 'react-autosuggest';
 function Input({ setQuery, units, setUnits }) {
   const [value, setValue] = useState('');
   const [suggestions, setSuggestions] = useState([]);
+    const [favourites, setFavourites] = useState([]);
+
 
   const handleUnitsChange = (e) => {
     const selectedUnit = e.currentTarget.name;
     if (units !== selectedUnit) setUnits(selectedUnit);
+  };
+
+  const handleFaveClick = () => {
+    toast.info('Added to favourites');
+    setFavourites((prevFavourites) => [...prevFavourites, value]);
   };
 
   const handleSearchClick = () => {
@@ -19,9 +26,6 @@ function Input({ setQuery, units, setUnits }) {
     }
   };
 
-  const handleFaveClick = () => {
-    toast.info('Added to favourites');
-  };
 
   const handleLocationClick = () => {
     toast.info('Fetching user location.');
@@ -36,18 +40,11 @@ function Input({ setQuery, units, setUnits }) {
   };
 
   const handleSuggestionsFetchRequested = ({ value }) => {
-    fetch(`https://api.openweathermap.org/data/2.5/find?q=${value}&type=like&appid=91ded8148b316886689e7522bee4fc11`)
+    fetch(`https://api.openweathermap.org/data/2.5/find?q=${value}&type=like&sort=population&cnt=10&appid=91ded8148b316886689e7522bee4fc11`)
       .then((response) => response.json())
       .then((data) => {
-        const suggestions = data.list.map((result) => {
-          const cityName = result.name;
-          const countryName = result.sys.country;
-          return countryName ? `${cityName}, ${countryName}` : cityName;
-        });
+        const suggestions = data.list.map((result) => `${result.name}, ${result.sys.country}`);
         setSuggestions(suggestions);
-      })
-      .catch((error) => {
-        console.error(error);
       });
   };
   
