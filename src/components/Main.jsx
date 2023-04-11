@@ -1,11 +1,13 @@
+//video background source: Benn TK - youtube creator
+//additional video edit for the Weather App project is done by Maria L
 import React from 'react'
-import eu from '../assets/eu.mp4'
+import background from '../assets/background.mp4'
 
 const Main = () =>{
   return (
    
     <div className='main'>
-        <video src={eu} autoPlay loop muted/>
+        <video src={background} autoPlay loop muted/>
     
     </div>
   )
