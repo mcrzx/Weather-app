@@ -190,7 +190,7 @@ export const closeMenu = () => {
   // }).to(".cursor2-active", { css: { className: "+=cursor2" } });
 };
 
-// recurrent animations
+// recurrent animations.
 export const fadeUp = (el, delay = 0) => {
   tl.from(el, {
     y: 150,
