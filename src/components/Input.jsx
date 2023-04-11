@@ -33,6 +33,13 @@ function Input({setQuery, units, setUnits}) {
       })
     }
   }
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearchClick();
+    }
+  };
+
   return (
     <div className='container mx-auto sm:px-6 md:px-8 lg:px-10'>
       <div className='flex flex-col sm:flex-row justify-center my-6'>
@@ -42,7 +49,9 @@ function Input({setQuery, units, setUnits}) {
             onChange={(e) => setCity(e.currentTarget.value)}
             placeholder='Enter location'
             type='text'
-            className='text-xl font-light p-2 w-full shadow-xl focus:outline-none capitalize placeholder:lowercase' />
+            className='text-xl font-light p-2 w-full shadow-xl focus:outline-none capitalize placeholder:lowercase'
+            onKeyPress={handleKeyPress}
+          />
           <div className='flex flex-row items-center justify-center space-x-4'>
             <UilSearch size={25} className='text-white cursor-pointer transition ease-out hover:scale-125 ' onClick={handleSearchClick}/>
             <UilLocationPoint size={25} className='text-white cursor-pointer transition ease-out hover:scale-125' onClick={handleLocationClick}/>
@@ -62,4 +71,4 @@ function Input({setQuery, units, setUnits}) {
   );
 }
 
-export default Input
+export default Input;
