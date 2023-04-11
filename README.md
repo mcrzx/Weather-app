@@ -1,4 +1,4 @@
-# Weather app
+# ⛅ Weather app 
 Ahead of time
 
 # About the project
