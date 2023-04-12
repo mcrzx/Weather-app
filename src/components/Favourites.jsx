@@ -38,9 +38,11 @@ function Favourites({ weather }) {
 
   return (
     <div className="mx-auto max-w-screen-lg mt-4 py-5 px-4 md:px-16 lg:px-24 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
-      <Main />
+     
       <Navbar />
       <ToastContainer />
+      <Main />
+
       <div className="my-6 flex justify-center">
         <p className="text-white text-xl font-extralight">
           {dt && timezone ? formatToLocalTime(dt, timezone) : ""}
@@ -84,6 +86,7 @@ function Favourites({ weather }) {
         </div>
       </div>
     </div>
+   
   );
 
 }
