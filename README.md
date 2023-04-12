@@ -4,7 +4,6 @@ Ahead of time
 <h2> About the project </h2>
 A Weather App website allows users to stay informed on the current, weather conditions. Providing features such as searching for a city that hints in advance the search results. Hourly and daily forecast is available in the app.
 
- <br>
 👉 Live Demo: [Live Demo](https://weather-app-mcrzx.vercel.app/)
 
 <h3> Built with: </h3>
