@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Styles.css"
-import Faves from '../components/Favourites'
 import { Link } from "react-router-dom";
 
 class Navbar extends Component{
@@ -13,7 +12,7 @@ class Navbar extends Component{
  
     <>
       <nav>
-        <a href="index.html">
+        <a href='/'>
           <svg
             id="logo-86"
             width="40"
@@ -39,7 +38,7 @@ class Navbar extends Component{
           </svg>
         </a>
         <div>
-            <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
+        <ul id="navbar" className={this.state.clicked ?"#navbar active" : "#navbar"}>
                 <li> <Link to = '/' className="active">Discover</Link> </li>
                 <li>
                 <Link to = '../components/Favourites'className="active">Favourites</Link>
