@@ -6,6 +6,10 @@ A Weather App website allows users to stay informed on the current, weather cond
 
 👉 Live Demo: [Live Demo](https://weather-app-mcrzx.vercel.app/)
 
+To run the app on localhost:
+- clone the project
+- run npm install
+
 <h3> Built with: </h3>
 » Tailwind CSS / Scss
 » React JS
@@ -24,4 +28,7 @@ A Weather App website allows users to stay informed on the current, weather cond
 
 <h3 align='center'>Responsive Mode 📱</h3>
 
+![IMG_0479](https://user-images.githubusercontent.com/117686212/231392974-5d2bd959-3809-4a65-af3d-f5b83042e351.jpg)
+![IMG_0480](https://user-images.githubusercontent.com/117686212/231392988-9e9e3a9e-e99b-4dff-85de-1d68891883c5.jpg)
+![IMG_0481](https://user-images.githubusercontent.com/117686212/231392993-35edd135-8a01-4f39-a69e-0d3bae67c93b.jpg)
 
