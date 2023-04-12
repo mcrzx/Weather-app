@@ -47,7 +47,7 @@ function Favourites({ weather }) {
         </p>
       </div>
       <div className="text-white text-3xl font-medium text-center my-8">
-        Favourite Cities
+        Favorite Cities
       </div>
       <div>
         <hr className="my-2" />
