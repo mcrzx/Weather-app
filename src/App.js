@@ -48,8 +48,7 @@ function App() {
     
     <div className="overlay">
       <div className="main">
-      <Navbar />
-
+        <Navbar />
         <Main />
         <div
           className={`mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}

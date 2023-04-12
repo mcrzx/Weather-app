@@ -13,9 +13,9 @@ function Favourites({ weather }) {
   const { dt, timezone } = weather || {};
   const favouriteCities = useFavouriteCities();
   const removeFavouriteCity = useRemoveFavouriteCity();
-
   const [selectedCities, setSelectedCities] = useState([]);
 
+  
   const handleDeleteClick = () => {
     if (selectedCities.length === 0) {
       return;
@@ -40,10 +40,8 @@ function Favourites({ weather }) {
     <div className="overlay">
       <div className="main">
       <Navbar />
-
-        <Main />
-   
-    <div className="mx-auto max-w-screen-lg mt-4 py-5 px-4 md:px-16 lg:px-24 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
+      <Main />
+      <div className="mx-auto max-w-screen-lg mt-4 py-5 px-4 md:px-16 lg:px-24 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
      
       <ToastContainer />
 
