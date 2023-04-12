@@ -22,6 +22,5 @@ A Weather App website allows users to stay informed on the current, weather cond
 
 ![Képernyőfotó 2023-04-12 - 8 44 43 1](https://user-images.githubusercontent.com/117686212/231363336-ca9b694e-dc96-4751-862c-4a6896878287.png)
 
-![Képernyőfotó 2023-04-12 - 8 48 57](https://user-images.githubusercontent.com/117686212/231363030-a1a1d67b-b2e7-4f84-873a-e46188bb13b7.png)
-![Képernyőfotó 2023-04-12 - 8 49 43](https://user-images.githubusercontent.com/117686212/231363059-1ba37d50-c0dc-4184-a593-e31cf0759e1c.png)
-![Képernyőfotó 2023-04-12 - 8 44 43 1](https://user-images.githubusercontent.com/117686212/231363336-ca9b694e-dc96-4751-862c-4a6896878287.png)
+<h3 align='center'>Responsive Mode 📱</h3>
+
