@@ -41,7 +41,7 @@ class Navbar extends Component{
         <ul id="navbar" className={this.state.clicked ?"#navbar active" : "#navbar"}>
                 <li> <Link to = '/' className="active">Discover</Link> </li>
                 <li>
-                <Link to = '../components/Favourites'className="active">Favourites</Link>
+                <Link to = '../components/Favourites'className="active">Favorites</Link>
               </li>
                 <li><a href="https://github.com/mcrzx/Weather-app">Source</a></li>
                 
